@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: slateblue;
+}
+
+.wrapper {
+    display: grid;
+    margin-top: 20vh;
+}
+
+button {
+    background-color: blanchedalmond;
+    border: 5px solid blanchedalmond;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: auto;
+    outline: none;
+    padding: 14px 24px;
+    text-transform: uppercase;
+}
+
+button:link, button:hover, button:active, button:visited {
+    background-color: rgba(0,0,0, 0.808);
+    border: 5px solid rgba(0,0,0, 0.808);
+    border-radius: 3px;
+    color: white;
+}
+
+#quote {
+    color: aquamarine;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin: auto;
+    margin: 5vh 20vw 0 25vw;
+}
+
+#author {
+    color: aquamarine;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 8vh 10vw 0 55vw;
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
+}
