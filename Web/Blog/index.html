@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Arthur Blog</title>
+</head>
+<body>
+    <div class="row">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg px-0 float-left col-lg-6">
+                <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="nav toggle" data-toggle="collapse" data-target="#smallnavcollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="smallnavcollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#forum">Forum</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#buynow">Buy now!</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#login">Login/Join</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <nav class="navbar navbar-expand-lg px-0 col-lg-6" id="socialicon">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navsocialcollapse" aria-expanded="false"
+                type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-end" id="navsocialcollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://twitter.com/home?lang=en"><i class="fab fa-twitter-square"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://vimeo.com/"><i class="fab fa-vimeo"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container"><hr class="mx-0 my-0"></div>
+
+    <div class="row">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg px-0">
+                <div class="col-lg-2 navbar-brand px-0">
+                    <a href="#home"><img id="logo" src="astonlogo.png" alt="LOGO"></a>
+                </div>
+                <div class="col-lg-8">
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse" aria-expanded="false"
+                    type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse justify-content-center" id="navbarcollapse">
+                        <ul class="navbar-nav navbar-nav-scroll mx-auto">
+                            <li class="nav-item dropdown px-3">
+                                <a class="nav-link dropdown-toggle active" id="homeMenu" data-bs-toggle="dropdown" aria- haspopup="true" aria-expanded="false" href="#home">
+                                    
+                                    Home
+                                
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="homeMenu">
+                                    <li><a class="dropdown-item active" href="index.html">
+                                        
+                                        "Home default"
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="index.html">
+                                        
+                                        Home default
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="index.html">
+                                           
+                                        Home default
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown px-3">
+                                <a class="nav-link dropdown-toggle" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#pages">
+                                    
+                                    Pages
+                                
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+                                    <li><a class="dropdown-item" href="index.html">
+                                        
+                                        Page default
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="index.html">
+
+                                        Page default
+                                        </a>
+                                    </li>
+                                    <li><a href="index.html">
+                                        
+                                        Page default
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown px-3">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="postMenu" href="#post">
+                                    
+                                    Post
+                                
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="postMenu">
+                                    <li>
+                                        <a class="dropdown-item" href="index.html">
+
+                                        Post default
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="index.html">
+
+                                            Post default
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="index.html">
+
+                                            Post default
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown px-3">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="megaMenu" href="#lifestyle">
+
+                                    Lifestyle
+                                
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="megaMenu">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card">
+                                                <img src="" alt="">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">
+                                                        <a href=""></a>
+                                                    </h6>
+                                                    <ul class="nav nav-divider">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href=""></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href=""></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card">
+                                                <img src="" alt="">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">
+                                                        <a href=""></a>
+                                                    </h6>
+                                                    <ul class="nav nav-divider">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href=""></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href=""></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card">
+                                                <img src="" alt="">
+                                                <div class="card-body">
+                                                    <h6 class="card-title"></h6>
+                                                    <ul class="nav nav-divider">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href=""></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href=""></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card">
+                                                <img src="" alt="">
+                                                <div class="card-body">
+                                                    <h6 class="card-title"></h6>
+                                                    <ul class="nav nav-divider">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href=""></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href=""></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">Trending tags: </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="btn btn-sm btn-primary-soft">Travel</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="btn btn-sm btn-primary-soft">Travel</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="btn btn-sm btn-primary-soft">Travel</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="btn btn-sm btn-primary-soft">Travel</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="btn btn-sm btn-primary-soft">Travel</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="btn btn-sm btn-primary-soft">Travel</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="btn btn-sm btn-primary-soft">Travel</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="btn btn-sm btn-primary-soft">Travel</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="btn btn-sm btn-primary-soft">Travel</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="btn btn-sm btn-primary-soft">Travel</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown px-3">
+                                <a class="nav-link" href="#components">Components</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 p-0">
+                    <div class="nav flex-nowrap align-items-center">
+                        <div class="nav-item">
+                            <button id="subbtn" class="btn btn-danger font-weight-bold">
+                                Subscribe!
+                            </button>
+                        </div>
+                        <div class="nav-item dropdown dropdown-toggle-icon-none nav-search">
+                            <a class="nav-link dropdown-toggle show" data-bs-toggle="dropdown" role="button" id="navSearch" aria-expanded="true" href="#">
+                                <img id="searchicon" src="active-search.png" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end shadow rounded show" aria-labelledby="navSearch">
+                                <form class="input-group">
+                                    <input class="form-control form-success" type="search">
+                                    <button class="btn btn-success m-0" type="submit">
+                                        Search
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            
+                        </div>
+                    </div>
+                </div>                
+            </nav>
+        </div>
+    </div>
+
+    <div class="container"><hr class="mx-0 my-5"></div>
+
+    <div class="row">
+        <div class="container">
+            <div class="col-lg-12">
+                <span class="px-3 py-2 bg-blue">Trending: </span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="container">
+            <div class="col-lg-6">
+
+            </div>
+
+
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="container">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="container">
+                        <div class="col-lg-6">
+
+                        </div>
+
+                        <div class="col-lg-6">
+
+                        </div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row">
+        <div class="container">
+            <div class="col-lg-8">
+                <div class="container">
+
+                </div>
+
+                <div class="container">
+                    <div class="col-sm-6">
+
+                    </div>
+
+
+                    <div class="col-sm-6">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="container">
+                    <div class="col-4">
+
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                    <div class="col-4">
+                        
+                    </div>
+                </div>
+
+                <div class="container"></div>
+                <div class="container"></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container"><hr></div>
+
+    <div class="row">
+
+        <div class="container"> <!--dont know how to do-->
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container"><hr></div>
+
+
+    <div class="row">
+        <div class="container">
+            <div class="col-lg-3">
+
+            </div>
+
+            <div class="col-lg-6">
+
+            </div>
+
+            <div class="col-lg-3">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container"><hr></div>
+
+    <div class="row">
+        <div class="container">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6"></div>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3"></div>            
+        </div>
+
+        <div class="container">
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="container">
+            <div class="col-lg-6">
+
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row">
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

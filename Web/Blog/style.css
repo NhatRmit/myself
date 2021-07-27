@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+[class *= row]{
+    margin: auto;
+}
+
+hr {
+    border: 0.5px solid rgb(216, 216, 216);
+}
+
+a:link{
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+#logo{ 
+    width: 8rem;
+    height: 5rem;
+}
+
+#subbtn {
+    font-size: 0.75rem;
+}
+
+#searchicon {
+    width: 1rem;
+}

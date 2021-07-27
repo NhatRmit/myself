@@ -38,11 +38,19 @@ figure {
     will-change: transform;
 }
 
-#logo {
-    width: 4rem;
-    height: 3rem;
+#logo1 {
+    width: 10rem;
 }
 
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+}
 
 /*Boot Padding*/
 [class *= "col-"] {
@@ -50,6 +58,7 @@ figure {
 }
 
 #navbar {
+    scroll-behavior: smooth;
     transition: top 0.5s;
 }
 
@@ -58,23 +67,19 @@ figure {
     cursor: pointer;
 }    
 
+.navbar-collapse {
+    font-size: 36px;
+}
+
 
 /* Media Query for Mobile Devices (xs)*/ 
 @media (max-width: 480px) {
-    .navbar-nav {
-        float: right;
-    }
+
 }
   
 /* Media Query for low resolution  Tablets, Ipads (sm)*/
 @media (min-width: 481px) and (max-width: 767px) {
-    #navbar-collapse {
-        transition: top 0.3s;
-    }
 
-    .navbar-nav {
-        float: right;
-    }
 }
   
 /* Media Query for Tablets Ipads portrait mode (md) */
@@ -89,6 +94,29 @@ figure {
   
 /* Media Query for Large screens (xl) */
 @media (min-width: 1281px) {
-
+    .navbar-brand{
+        padding-left: 25rem;
+    }
+    .navbar-collapse {
+        font-size: 36px;
+        padding-left: 21rem;
+    }
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 50%;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
 
