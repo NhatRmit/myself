@@ -2,7 +2,6 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    
     user-select: none;
 }
 
@@ -23,10 +22,16 @@ img{
     height: 8vw; 
 }
 
+@font-face {
+    font-family: "Brice";
+    src: url("final/Brice Font Family/Brice-LightExpanded.otf");
+}
+
 .logo a{
     text-decoration: none;
     color: #FFFDC7; 
-    font-family: Brice Light Expanded;
+
+    font-family: Brice;
     font-size: 9pt;
     position: relative;
     padding: 1vw;
@@ -96,7 +101,7 @@ img{
 .nav_menu li a{
     text-decoration: none;
     font-size: small;
-    font-family: -apple-system, Brice-LightExpanded;
+    font-family: Brice;
     color: #18171E; 
     z-index: 4;
 }
@@ -104,7 +109,7 @@ img{
 .nav_menu li a:hover{
     text-decoration: underline;
     font-size: small;
-    font-family: -apple-system, Brice Light Expanded;
+    font-family: Brice;
     color: #18171E; 
     z-index: 4;
 }
