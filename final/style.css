@@ -1,0 +1,815 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    user-select: none;
+}
+
+html {
+    background-color: #18171E;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin-left:3.5vw;
+    margin-right: 4vw;
+    
+}
+
+/*NAVIGATION BAR*/
+img{
+    width: 8vw;
+    height: 8vw; 
+}
+
+.logo a{
+    text-decoration: none;
+    color: #FFFDC7; 
+    font-family: Brice Light Expanded;
+    font-size: 9pt;
+    position: relative;
+    padding: 1vw;
+    width: fit-content; 
+    border: 1px solid #FFFDC7;
+    border-radius: 3vw;
+}
+
+.logo{
+    margin-top: 6vw;
+}
+
+.nav{
+    width: 100%;
+    z-index: 1;
+    background-color: #18171E;
+    position: fixed;
+    top: 0;
+    padding: 0;
+}
+    
+.nav_toggle{
+    position: absolute;
+    cursor: pointer;
+    right: 0;    
+    margin-right: 5vw;
+    margin-top: 3vw;
+}
+
+.close{
+    display:none;
+    margin-top: 2vw;
+}
+
+.menu{
+   margin-top: 2vw;
+   
+
+}
+
+.nav_checkbox{
+    display: none;    
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFDC7;
+    margin-right: 5vw;
+    margin-left:-2vw;
+    margin-top: 2vw;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    z-index: 4;
+}
+
+.nav_menu li{
+    list-style: none;
+    display: none;
+    padding: 1vw; 
+    margin: 2vw;
+    z-index: 3;
+}
+
+
+.nav_menu li a{
+    text-decoration: none;
+    font-size: small;
+    font-family: -apple-system, Brice-LightExpanded;
+    color: #18171E; 
+    z-index: 4;
+}
+
+.nav_menu li a:hover{
+    text-decoration: underline;
+    font-size: small;
+    font-family: -apple-system, Brice Light Expanded;
+    color: #18171E; 
+    z-index: 4;
+}
+
+
+        /*NAV-BAR CLICKED*/
+#nav_checkbox:checked ~ ul.nav_menu li{
+    display: block;
+}
+
+#nav_checkbox:checked ~ label.nav_toggle .close{
+    display: block;
+}
+
+#nav_checkbox:checked ~ label.nav_toggle .menu{
+    display:none;
+}
+
+        /*NAV-BAR DESTOPVIEW*/
+@media only screen and (min-width: 560px){
+    .logo{
+        position: absolute;
+        font-size: 13pt;
+        margin-left: 1vw;
+        margin-top: 5vw;
+    }
+    
+    .nav .nav_toggle{
+        display: none;
+        
+    }
+
+    .nav_menu{
+        flex-direction: row;
+        justify-content:flex-end;
+        margin-left: 1vw;
+        background-color: transparent;
+    }
+
+
+    .nav_menu li{
+        display: block;
+        margin-top: 2.5vw; 
+    }
+
+    .nav_menu li a{
+        padding: 1vw;
+        color:#FFFDC7;
+        margin-right: 2vw;
+    }
+
+
+    .nav_menu li a:hover{
+        text-decoration: none;
+        background-color: #FFFDC7;
+        color: #18171E;
+        width: fit-content;
+        border-radius: 3vw;
+        padding: 1vw;
+        margin-right: 2vw;
+   }
+}
+
+
+
+
+
+
+/*HOMEPAGE*/
+#homepage{
+    height: 6vw;
+}
+.homepage{
+    width: 100%;
+    
+    
+}
+
+#home1{
+    position: absolute;
+    width: 9.5vw;
+    height: 9.5vw;
+    margin-left: 0.5vw;
+    margin-top: -2vw;
+    z-index: -1;
+    
+}
+
+h1{
+    
+    font-family: Brice SemiBold SemiExpanded;
+    font-size: 8.5vw;
+    color: #FFFDC7;
+    margin-left: 5vw;
+    margin-top: 10vw;
+
+}
+
+#home2{
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin-top: -35vw;
+    
+    cursor: pointer;
+}
+
+
+
+/*ABOUTPAGE*/
+.aboutpage_total{
+    margin-top: 10vw;
+    flex-direction: row;
+}
+.topabout{
+    margin-top: 40vw;
+}
+
+.about1{
+    position: absolute;
+    width: 9.5vw;
+    height: 9.5vw;
+    margin-top: 4vw;
+}
+
+.aboutpage{
+    display: flex;
+    flex-direction: column;
+}
+
+.top_about h2{
+    color:#FFFDC7;
+    font-family: Brice Bold Expanded;
+    font-size: 5vw;
+    margin-top: 5vw;
+    padding-top: 7vw;
+    margin-left: 3.5vw;
+
+}
+
+.content{
+    color:#FFFDC7;
+    font-family: Brice Light SemiCondensed;
+    font-size: 3vw;
+    padding-top: 10vw;
+    padding-bottom: 3vw;
+    margin: -8vw 3vw;
+}
+
+.picture{
+    width: 80%;
+    height: 80%;
+     
+}
+
+
+.content2{
+    color:#FFFDC7;
+    font-family: Brice Light SemiCondensed;
+    font-size: 3vw;
+    margin: -8vw 3vw;
+    padding-top: 10vw;
+    padding-bottom: 3vw;
+}
+
+strong{
+    font-family: Brice Bold Expanded;
+    font-size: 3vw;
+}
+@media only screen and (min-width: 560px){
+    .aboutpage_total{
+        margin-top: 7vw;
+    }
+
+    #homepage{
+        height: 2vw;
+    }
+    .aboutpage{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .content{
+        flex: 50%;
+        font-family: Brice Light SemiCondensed;
+        font-size: 1.5vw;
+        
+    }
+
+    .avartar{
+        flex: 50%;
+        justify-self: flex-end;
+        padding: -5vw;
+        
+
+    }
+
+    .picture{
+        width: 100%;
+        height: 100%;    
+    }
+
+    .content2{
+        color:#FFFDC7;
+        font-family: Brice Light SemiCondensed;
+        font-size: 1.5vw;
+        
+        
+    }
+
+    strong{
+        font-family: Brice Bold Expanded;
+        font-size: 2vw;
+    }
+
+
+}
+
+
+
+
+
+/*WORKPAGE*/
+    /*2020*/
+a:link{
+    text-decoration: none;
+}
+
+
+ #work_sticker1{
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    margin-left: 43vw;
+    margin-top: -1vw;
+    
+}   
+
+.bottom_workpage2020{
+    display: flex;
+    flex-direction: column;
+}
+
+h5{
+    font-family: Brice Bold SemiExpanded;
+    font-size: 12vw;
+    color: #FFFDC7;
+    margin-left: 5vw;
+    margin-top: 13vw;
+}    
+
+
+.work1{
+    width: 90%;
+    height: 90%;
+    padding: 2vw;
+    background-color: #FFFDC7;
+    border-radius: 3vw;
+    margin-right:  5vw;
+    margin-left: 5vw;
+    cursor: pointer;
+}
+
+.content_work2020 p{
+    color:#FFFDC7;
+    font-family: Brice light SemiCondensed;
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 1vw;    
+    margin-bottom: 4vw;
+    cursor: pointer;
+
+}
+
+/*2021*/
+#work_sticker2{
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    right:0;
+    margin-top: -1vw;
+    margin-right: 4vw;
+}
+
+h6{
+    font-family: Brice Bold SemiExpanded;
+    font-size: 14vw;
+    color: #FFFDC7;
+    text-align: right;
+    margin-right: 3.5vw;
+    margin-top: 13vw;
+}
+
+.content_work2021{
+    display: flex;
+    flex-direction: column;
+}
+
+.work2{
+    width: 90%;
+    height: 90%;
+    padding: 2vw;
+    background-color: #FFFDC7;
+    border-radius: 3vw;
+    margin-right:  5vw;
+    margin-left: 5vw;
+    cursor: pointer;
+}
+
+
+
+
+.content_work2021 p{
+    color:#FFFDC7;
+    font-family: Brice light SemiCondensed;
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 1vw;
+    margin-bottom: 4vw;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (min-width: 560px){
+
+    /*2020*/
+    .work1{
+        width: 70%;
+        height: 70%;
+        padding: 2vw;
+        background-color: #FFFDC7;
+        margin-left: 5vw;
+        border-radius: 3vw;
+        cursor: pointer;
+        
+    }
+
+    .content_work2020 p{
+        font-size: 2vw;
+        color:#FFFDC7;
+        font-family: Brice Extra Light SemiCondensed;
+        margin-left: 5vw;
+        text-align: left;
+        cursor: pointer;
+
+    }
+
+    /*2021*/
+    .content_work2021{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+    
+    .content_work2021 a img{
+        float: right;
+        width: 70%;
+        height: 70%;
+        padding: 2vw;
+        margin-right: 3vw;
+        background-color: #FFFDC7;
+        border-radius: 3vw;
+        cursor: pointer;
+    }
+
+
+    
+    .content_work2021 p{
+        color:#FFFDC7;
+        font-size: 2vw;
+        font-family: Brice Extra Light SemiCondensed;
+        margin-right: 3.5vw;
+        cursor: pointer;
+        
+
+    }
+}
+
+/*TASKS*/
+    /*TASK 1 2 3 4*/
+#next a{
+    text-decoration: none;
+    color:#FFFDC7;
+}
+#next{
+    color:#FFFDC7;
+    font-family: Brice Regular;
+    font-size: 4vw;
+    text-align: right;
+    margin: 2vw;
+    padding: 3vw;
+}
+
+#next:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.task_total{
+    margin-top: 10vw;
+    flex-direction: row;
+}
+
+.task{
+    position: absolute;
+    width: 9.5vw;
+    height: 9.5vw;
+    margin-top: 4vw;
+}
+
+.task_page{
+    display: flex;
+    flex-direction: column;
+}
+
+.top_task h2{
+    color:#FFFDC7;
+    font-family: Brice Bold Expanded;
+    font-size: 5vw;
+    margin-top: 5vw;
+    padding-top: 7vw;
+    margin-left: 3.5vw;
+
+}
+
+.content_task p{
+    color:#FFFDC7;
+    font-family: Brice Light SemiCondensed;
+    font-size: 3vw;
+    margin: 3vw 3vw;
+    
+}
+.pic_task1{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.pic_task1 img{
+    width: 90%;
+    height: 90%;
+    margin: 4vw;
+    border-radius: 2vw;
+}
+
+.bottom_task .content_task p strong{
+    font-family: Brice SemiBold;
+    font-size: 4vw;
+    text-decoration: underline;
+}
+
+
+
+    /*TASK2*/
+.task2vid{
+    margin: 3vw 3vw;
+    
+}
+
+.bottom_task .content_task a:link{
+    text-decoration: none;
+    color:#FFFDC7;
+    font-family: Brice SemiBold;
+    font-size: 4vw;
+}
+
+.bottom_task .content_task a:visited{
+    text-decoration: none;
+    color:#FFFDC7;
+    font-family: Brice SemiBold;
+    font-size: 4vw;
+}
+
+
+.bottom_task .content_task a:link:hover{
+    text-decoration: underline;
+}
+
+
+    /*TASK3*/
+.pic_task3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pic_task3 img{
+    width: 100%;
+    height: 100%;
+    margin: 2vw;
+    border-radius: 2vw;
+}
+
+
+    /*task4*/
+.pic_task4 .task4{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.pic_task4 img{
+    width: 100%;
+    height: 100%;
+    margin-right: 0vw 4vw;
+    border-radius: 2vw;
+}
+
+.task4 p{
+    color:#FFFDC7;
+    font-family: Brice Light SemiCondensed;
+    font-size: 3vw;
+    padding-bottom: 4vw;
+}
+
+
+
+
+/*mediascreen task1,2,3,4*/
+
+@media only screen and (min-width: 560px){
+    #next a{
+        text-decoration: none;
+        color:#FFFDC7;
+    }
+    #next{
+        color:#FFFDC7;
+        font-family: Brice Regular;
+        font-size: 3vw;
+        text-align: right;
+        margin-right: -2vw;
+        
+    }
+    
+    #next:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .content_task p{
+        color:#FFFDC7;
+        font-family: Brice Light SemiCondensed;
+        font-size: 2vw;
+        margin: 3vw 3vw;
+        
+    }
+
+    .bottom_task .content_task p strong{
+        font-family: Brice SemiBold;
+        font-size: 2.5vw;
+        text-decoration: underline;
+        
+    }
+
+    .pic_task1{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        
+    }
+
+    .pic_task1 img{
+        width: 32%;
+        height: 32%;
+        margin: 0 1vw;
+        border-radius: 2vw;
+        
+    }
+
+    .bottom_task .content_task a:link{
+        text-decoration: none;
+        color:#FFFDC7;
+        font-family: Brice SemiBold;
+        font-size: 2.5vw;
+        
+        
+    }
+
+    .bottom_task .content_task a:link:hover{
+    text-decoration: underline;
+    }
+
+    /*TASK3*/
+    .pic_task3{
+        justify-content: center;
+        
+    }
+
+
+    .pic_task3 img{
+        border-radius: 2vw;
+        width: 32%;
+        height: 32%;
+        padding: 1vw;
+        margin: 0.5vw;
+    }
+
+    /*task4*/
+    .pic_task4{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pic_task4 img{
+        
+        width: 80%;
+        height: 800%;
+        margin-right: 0vw 4vw;
+        border-radius: 2vw;
+    }
+
+    .task4 p{
+        color:#FFFDC7;
+        font-family: Brice Light SemiCondensed;
+        font-size: 2.5vw;
+        padding-bottom: 4vw;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+.footer{
+    
+    
+    padding: 2vw;
+    margin-top: 5vw;
+    margin-left: -3.5vw;
+    margin-right: -4vw;
+    border-radius: 5vw;
+    background-color: #AFA97D;
+    
+}
+
+.footer h8{
+    color: #18171E;
+    font-family: Brice bold Expanded;
+    font-size: 4vw;
+    margin-left: 3vw;
+    
+}
+
+.footer a{
+    text-decoration: none;
+    color: #18171E;
+    font-family: Brice light Expanded;
+    font-size: 3vw;
+    float: right;
+    margin-right: 3vw;
+    padding-top: 1.5vw;
+    
+
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 560px){
+    .footer{
+    
+    
+        padding: 2vw;
+        margin-top: 5vw;
+        margin-left: -3.5vw;
+        margin-right: -4vw;
+        border-radius: 5vw;
+        background-color: #AFA97D;
+        
+    }
+    
+    .footer h8{
+        color: #18171E;
+        font-family: Brice bold Expanded;
+        font-size: large;
+        margin-left: 3vw;
+        
+    }
+    
+    .footer a{
+        text-decoration: none;
+        color: #18171E;
+        font-family: Brice light Expanded;
+        font-size: small;
+        float: right;
+        margin-right: 3vw;
+        padding-top: 0.5vw;
+    }
+
+    .footer a:hover{
+        text-decoration: underline;
+    }
+}
+
+    
