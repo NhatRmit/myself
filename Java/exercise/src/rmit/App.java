@@ -3,6 +3,8 @@ package rmit;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
@@ -54,6 +56,12 @@ public class App {
 
         age();
 
+        System.out.println(findPrimes(1, 100));
+
+        palindromeCheck("DOOM");
+
+        System.out.println(factorial(5));
+
     }
 
     public static void checkDuplicate(String sentence) {
@@ -82,7 +90,7 @@ public class App {
         System.out.println(birthDate);
         System.out.println(myAge);
 
-        System.out.println(findPrimes(1, 100));
+        
     }
 
     public static ArrayList<Integer> findPrimes(int first_num, int last_num) {
@@ -108,6 +116,86 @@ public class App {
 
         return primesList;
     }
+
+    public static void palindromeCheck(String s){
+        boolean palindrome = true;
+
+        
+        String reverse = "";
+        for(int i=s.length()-1; i>=0; i--){
+            reverse += s.charAt(i);
+        }
+
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i) != reverse.charAt(i)){
+                palindrome = false;
+            }
+        }
+
+        if(palindrome) {
+            System.out.println("It is Palindrome!");
+        } else {
+            System.out.println("It is NOT Palindrome!");
+        }
+    }
+
+    public static int factorial (int n){
+        if(n == 0) {
+            return 1;
+        } else {
+            return n * factorial(n-1);
+        }
+    }
+
+    public static void MagicBall () {
+        System.out.println("Enter your question");
+        Scanner s = new Scanner(System.in);
+        s.next();
+        s.close();
+
+        Random r = new Random();
+        int num = r.nextInt(5);
+        System.out.println(num);
+
+        if(num == 0){
+            System.out.println("As I see it, yes");
+        } else if(num == 1) {
+            System.out.println("Signs point to yes");
+        } else if(num == 2) {
+            System.out.println("Reply hazy, try again");
+        } else if(num == 3) {
+            System.out.println("Do not count on it");
+        } else if(num == 4) {
+            System.out.println("Outlook not so good");
+        }
+    }
+
+    public static void reactionTimer () throws InterruptedException {
+        System.out.println("3");
+        Thread.sleep(1000);
+        System.out.println("2");
+        Thread.sleep(1000);
+        System.out.println("1");
+        Thread.sleep(1000);
+        System.out.println("GO!!!");
+
+        long startTime = System.currentTimeMillis();
+
+        Scanner s = new Scanner(System.in);
+        s.next();
+
+        long stopTime = System.currentTimeMillis();
+        
+        long reactTime = stopTime - startTime;
+
+        System.out.println(reactTime + "ms");
+        s.close();
+    }
+
+
+    
+
+
 }
 
 class Pokemon {

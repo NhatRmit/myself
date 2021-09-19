@@ -7,9 +7,11 @@ const Navbar = () => {
             <div className="links">
                 <Link to="/">Home</Link>
                 <Link to="/create">New Blog</Link>
+                <Link to="/Login">Log in</Link>
+                
             </div>
         </nav>
     );
 }
- 
+
 export default Navbar;
